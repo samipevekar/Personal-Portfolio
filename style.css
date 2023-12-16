@@ -427,6 +427,9 @@ section{
         width: 60%;
         margin-left: 20%;
     }
+    .content a{
+        margin: 7px;
+    }
     #contact form{
         display: none;
 
