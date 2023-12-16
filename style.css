@@ -72,6 +72,7 @@ h1 span{
     position: absolute;
     right: 50px;
     margin: 0;
+    
 
 }
 
@@ -174,6 +175,7 @@ h1 span{
 .card:hover{
     background-color: var(--red);
     transform: translateY(-10px);
+    box-shadow: .1px .1px 30px var(--red)
 }
 .card h2{
     margin: 10px 0px;
@@ -269,15 +271,19 @@ h1 span{
 }
 .fa-facebook:hover{
     color: blue;
+    box-shadow: .1px .1px 30px;
 }
 .fa-twitter:hover{
     color: rgb(0, 191, 255);
+    box-shadow: .1px .1px 30px;
 }
 .fa-instagram:hover{
     color: rgb(255, 0, 119);
+    box-shadow: .1px .1px 30px;
 }
 .fa-linkedin:hover{
-    color: rgb(64, 64, 255);
+    color: rgb(99, 99, 255);
+    box-shadow: .1px .1px 30px;
 }
 #cv{
     background-color: var(--red);
@@ -286,10 +292,12 @@ h1 span{
     margin: 10px 0px;
     margin-top: 40px;
     width: 150px;
+    box-shadow: .1px .1px 10px var(--red);
 
 }
 #cv:hover{
     background-color: red;
+    box-shadow: .1px .1px 30px var(--red);
 
 }
 
@@ -316,13 +324,115 @@ form button{
     width: 370px;
     background-color: var(--red);
     color: white;
+    box-shadow: .1px .1px 10px var(--red);
 }
 form button:hover{
     background-color: red;
+    box-shadow: .1px .1px 30px var(--red)
 }
 
 
 
 section{
     height: 100vh;
+    
+    padding-top: 60px;
+}
+
+
+@media screen and (max-width:900px){
+    .navbar{
+        flex-direction: column;
+        padding-top: 10px;
+
+    }
+    .navbar ul{
+        margin: 0 0 0 25px;
+
+    }
+
+    #home{
+        position: relative;
+    }
+    #home img{
+        top: 80px;
+        left: 0;
+        width: 350px;
+
+
+    }
+    
+    #home p{
+        font-size: 20px;
+        position: absolute;
+        top: 60%;
+        left: 20px;
+    }
+    #home h1{
+        font-size: 35px;
+        position: absolute;
+        left: 20px;
+        top: 65%;
+    }
+
+
+    #about img{
+        display: none;
+    }
+    
+    #about h1{
+        text-align: center;
+    }
+
+    #service h1{
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+    #service .cards{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .cards .card{
+        margin-top: 10px;
+        width: 200px;
+        height: 120px;
+        font-size: 10px;
+    }
+
+
+    #portfolio h1{
+        text-align: center;
+    }
+    .portfolio {
+        flex-direction: column;
+        align-items: center;
+    }
+    .word{
+        margin-top: 20px;
+    }
+
+
+    #contact{
+        flex-direction: column;
+        margin-top: 120%;
+    }
+    #contact h1{
+        text-align: center;
+        font-size: 33px;
+    }
+    .content{
+        width: 58%;
+        margin-left: 20%;
+    }
+    #contact form{
+        display: none;
+
+    }
+    #cv{
+        margin: auto;
+    }
+
 }
