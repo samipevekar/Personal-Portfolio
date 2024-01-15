@@ -12,8 +12,9 @@ body{
     background-color: black;
     color: white;
     font-family: 'Lato', sans-serif;
-font-family: 'Poppins', sans-serif;
-/* overflow: hidden; */
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: auto;
 }
 .navbar{
     display: flex;
@@ -65,6 +66,7 @@ h1 span{
     display: flex;
     flex-direction: column;
     position: relative;
+    height: 100vh;
 
 }
 #home img{
@@ -167,6 +169,7 @@ h1 span{
     background-color: rgb(29, 29, 29);
     border-radius: 10px;
     padding: 20px;
+    margin: 10px;
     transition: all .7s;
 }
 .card p{
@@ -320,6 +323,9 @@ form input,button,textarea{
     color: white;
 
 }
+textarea::-webkit-scrollbar{
+    width: 0;
+}
 form button{
     width: 370px;
     background-color: var(--red);
@@ -334,7 +340,6 @@ form button:hover{
 
 
 section{
-    height: 100vh;
     
     padding-top: 60px;
 }
@@ -358,6 +363,7 @@ section{
         top: 80px;
         left: 0;
         width: 350px;
+        margin: auto;
 
 
     }
@@ -379,6 +385,12 @@ section{
     #about img{
         display: none;
     }
+   .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
     
     #about h1{
         text-align: center;
@@ -413,22 +425,28 @@ section{
     .word{
         margin-top: 20px;
     }
-
-
+    
     #contact{
         flex-direction: column;
-        margin-top: 120%;
+        margin-top: 10%;
     }
     #contact h1{
         text-align: center;
         font-size: 33px;
     }
     .content{
-        width: 60%;
-        margin-left: 20%;
+        width: fit-content;
+        margin: auto;
+        box-shadow: 0px 0px 50px  red;
+        padding: 100px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+    .icons{
+        margin-bottom: 20px;
     }
     .content a{
-        margin: 7px;
+        margin-bottom: 20px;
     }
     #contact form{
         display: none;
